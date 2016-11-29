@@ -1,0 +1,12 @@
+[Unit]
+Desicription=Change Brightness File Permissions
+
+
+
+[Service]
+Type=oneshot
+ExecStart=/opt/scripts/brightnessPermissions
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
